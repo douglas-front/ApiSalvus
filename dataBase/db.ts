@@ -6,7 +6,7 @@ class Database {
 
   private constructor() {
     this.pool = new Pool({
-      connectionString: process.env.CONNECTION_STRING,
+      connectionString: process.env.POSTGRES_URL,
     });
   }
 
